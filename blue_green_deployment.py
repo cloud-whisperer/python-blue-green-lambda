@@ -2,11 +2,11 @@ import boto3
 import time
 
 # AWS region and Lambda function name.
-region = "us-east-1"
+region = "<region>"
 lambda_function_name = "BlueGreenLambda"
 
 # Role ARN for Lambda.
-role_arn = "arn:aws:iam::880904187826:role/devops-lambda-execution-role"
+role_arn = "arn:aws:iam::<acct#>:role/devops-lambda-execution-role"
 
 # Initialize AWS Lambda client.
 lambda_client = boto3.client("lambda", region_name=region)
